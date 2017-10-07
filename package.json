@@ -29,7 +29,7 @@
   "scripts": {
     "dev": "poi",
     "build": "poi build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
