@@ -4,11 +4,16 @@
   "description": "Vuex with TypeScript example.",
   "private": true,
   "dependencies": {
+    "nvl": "^1.0.1",
+    "randomcolor": "^0.5.3",
     "vue": "^2.4.4",
+    "vue-color": "^2.4.0",
     "vuetify": "^0.16.3",
     "vuex": "^2.4.1"
   },
   "devDependencies": {
+    "@types/node": "^8.0.33",
+    "@types/randomcolor": "^0.4.3",
     "eslint": "^4.8.0",
     "eslint-config-gluons": "^2.1.0",
     "node-sass": "^4.5.3",
