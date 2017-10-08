@@ -2,13 +2,23 @@
 
 const ghpages = require('gh-pages');
 
+const isCI = process.env.CI;
+const isSemaphore = process.env.SEMAPHORE;
+
+let message = 'Auto deploy to GitHub Pages';
+if (isCI && isSemaphore) {
+	const semaphoreDeployNo = process.env.SEMAPHORE_DEPLOY_NUMBER;
+	message = `Auto deploy to GitHub Pages by Semaphore CI (Deploy No. ${semaphoreDeployNo})`;
+}
+
 ghpages.publish(
 	'dist',
 	{
 		user: {
 			name: 'Gluons Deployment Bot',
 			email: 'gluons-deployment-bot@github.io'
-		}
+		},
+		message
 	},
 	err => {
 		if (!err) {
