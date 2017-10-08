@@ -16,6 +16,7 @@
     "@types/randomcolor": "^0.4.3",
     "eslint": "^4.8.0",
     "eslint-config-gluons": "^2.1.0",
+    "gh-pages": "^1.0.0",
     "node-sass": "^4.5.3",
     "poi": "^9.3.9",
     "poi-preset-typescript": "^9.0.2",
@@ -29,6 +30,7 @@
   "scripts": {
     "dev": "poi",
     "build": "poi build",
+    "deploy": "./bin/deploy",
     "test": "echo \"No test specified\" && exit 0"
   },
   "repository": {

@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const ghpages = require('gh-pages');
+
+ghpages.publish(
+	'dist',
+	{
+		user: {
+			name: 'Gluons Deployment Bot',
+			email: 'gluons-deployment-bot@github.io'
+		}
+	},
+	err => {
+		if (!err) {
+			console.log('Deploy succeed.');
+		} else {
+			console.log('Deploy fail!');
+			console.error(`Error: ${err.toString()}`);
+		}
+	}
+);
