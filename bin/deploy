@@ -11,6 +11,7 @@ if (isCI && isSemaphore) {
 	message = `Auto deploy to GitHub Pages by Semaphore CI (Deploy No. ${semaphoreDeployNo})`;
 }
 
+ghpages.clean();
 ghpages.publish(
 	'dist',
 	{
