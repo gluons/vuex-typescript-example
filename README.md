@@ -5,4 +5,34 @@
 
 [Vuex](https://github.com/vuejs/vuex/) with [TypeScript](https://www.typescriptlang.org/) example.
 
-🚧 WIP
+## Get Started
+
+### Install stuffs
+
+Via [NPM](https://www.npmjs.com/):
+
+```bash
+npm install
+```
+
+Via [Yarn](https://yarnpkg.com/):
+
+```bash
+yarn
+```
+
+### Running Dev
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+### Build
+
+```bash
+npm run build
+# or
+yarn build
+```
