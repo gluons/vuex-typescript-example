@@ -8,9 +8,9 @@ v-app#home
 				v-layout(row, wrap, align-content-center, justify-space-around)
 					v-flex(xs12)
 						sketch-picker(:value='colour', @input='updateColor').picker-center
-					v-flex(xs12, sm6)
+					v-flex(xs12, sm4)
 						color-box
-					v-flex(xs12, sm6)
+					v-flex(xs12, sm4)
 						color-box
 </template>
 
