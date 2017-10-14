@@ -1,5 +1,7 @@
 <template lang="pug">
 v-card(raised, hover)
+	v-card-title(primary-title, v-if='hasTitle')
+		span.title {{ title }}
 	v-card-text
 		.color-box(:data-color='colour', :style='boxStyle')
 </template>
@@ -10,11 +12,19 @@ import Component from 'vue-class-component';
 import { Getter } from '@/decorators';
 
 @Component({
-	name: 'ColorBox'
+	name: 'ColorBox',
+	props: {
+		title: String
+	}
 })
 export default class ColorBox extends Vue {
 	@Getter('colour') colour: string;
 
+	title: string;
+
+	get hasTitle() {
+		return !!this.title;
+	}
 	get boxStyle() {
 		return {
 			'background-color': this.colour
